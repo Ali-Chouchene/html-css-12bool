@@ -6,19 +6,20 @@
     font-family: sans-serif;
 }
 
-/*UTILITIES*/
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /**row**/
-.row {}
+.row.nested {
+    padding: 10px;
+}
 
 /**col**/
 .row>[ class^="col"] {
     min-height: 50px;
-    background-color: blue;
+    background-color: rgb(55, 55, 231);
     color: white;
     border: 1px solid white;
+}
+
+.row>[ class^="col"] [ class^="col"] {
+    background-color: rgb(33, 245, 33);
+    border: 1px solid blue;
 }
