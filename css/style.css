@@ -13,10 +13,12 @@
 
 /**col**/
 .row>[ class^="col"] {
-    min-height: 50px;
+    min-height: 40px;
     background-color: rgb(55, 55, 231);
     color: white;
     border: 1px solid white;
+    text-align: center;
+
 }
 
 .row>[ class^="col"] [ class^="col"] {
